@@ -1,14 +1,24 @@
-Course Document Schema:
+# 📚 MicroCourses
+
+**MicroCourses** is a fictional educational platform offering a diverse range of online courses to learners worldwide. Built using the **MERN stack** (MongoDB, Express, React, Node.js), this application provides a scalable and responsive web interface for browsing and managing courses.
+
+---
+
+## 🗂️ Course Schema & Example
+
+```json
 {
-    "title": "",
-    "description": "",
-    "longDescription": "",
-    "duration": ,
-    "imageName": "",
-    "modules": []
+  "title": "",
+  "description": "",
+  "longDescription": "",
+  "duration": ,
+  "imageName": "",
+  "modules": []
 }
 
 Example (where imageName is a file that exists in the images folder and modules is a list of Ids which exist in the Modules collection):
+POST
+```json
 {
     "title": "Cloud Computing and Virtualization",
     "description": "Explore cloud infrastructure, services, and deployment models.",
@@ -23,7 +33,17 @@ Example (where imageName is a file that exists in the images folder and modules 
     ]
 }
 
-Module Document Schema:
+---
+
+## 🗂️ Module Schema & Example
+```json```
+{
+    "name": ""
+}
+
+Example:
+POST
+```json
 {
     "name": "Network Troubleshooting and Diagnostics"
 }
