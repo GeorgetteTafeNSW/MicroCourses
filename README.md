@@ -6,7 +6,7 @@
 ## Setup Instructions:
 ### Back End
 
-1. Download files in BackEnd folder: LINKHERE
+1. Download files in BackEnd folder: [HERE](https://github.com/GeorgetteTafeNSW/MicroCourses/tree/main/BackEnd)
 2. Open powershell window in the downloaded folder
 3. Run the following commands:
 ```
@@ -17,7 +17,7 @@ node --env-file=config.env server.js
 
 ### Front End
 
-1. Download files in FrontEnd folder: LINKHERE
+1. Download files in FrontEnd folder: [HERE](https://github.com/GeorgetteTafeNSW/MicroCourses/tree/main/FrontEnd)
 2. Open powershell window in the downloaded folder
 3. Run the following commands:
 
