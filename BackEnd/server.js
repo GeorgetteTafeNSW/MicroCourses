@@ -135,7 +135,7 @@ app.get("/courses/:courseId", (req, res) => {
  @body    content (json)
  @returns JSON object with the created course
  */
-app.post("/course", async (req, res) => {
+app.post("/courses", async (req, res) => {
   //map passed in moduleIds to ObjectIds
   const modulesAsObjectIds = req.body.modules?.map(id => new Types.ObjectId(`${id}`)) || [];
 
@@ -162,7 +162,7 @@ app.post("/course", async (req, res) => {
  @body    content (json) with name field
  @returns JSON object with the created module
  */
-app.post("/module", async (req, res) => {
+app.post("/modules", async (req, res) => {
   //create new model + add generated id field
   console.log(req.body);
   const newModule = new Module({
