@@ -75,14 +75,17 @@ POST
 ```
 ---
 ## 🛠️ Problems Encountered
+
 Uploading Images
 Initial versions of this application involved storing images in the database as byte arrays but this had several downsides.
-\1. Storage overhead: storing these images, even though they are quite small bloated the disk size required by the database.
-\2. Conversion nightmares: In order to store + recall images, multiple stages of conversion needed to be done, which increases the opportuinity for bugs.
-\3. Bad practice: In general industry standards recommend not serving images directly from the main DB and instead using content delivery networks or cloud
+1. Storage overhead: storing these images, even though they are quite small bloated the disk size required by the database.
+2. Conversion nightmares: In order to store + recall images, multiple stages of conversion needed to be done, which increases the opportuinity for bugs.
+3. Bad practice: In general industry standards recommend not serving images directly from the main DB and instead using content delivery networks or cloud
     storage.
 
 Since this project is more a proof of concept than a fully fledged production ready application, I decided instead to store the images on the server and only store the image name in the database. This then allowed me to serve the images via urls which point directly to the local version of the image.
+
 ---
+
 ## Future Improvements
 See here: LINKHERE for information on how the application can utilise caching and load balancing among other things to support high availability and scalability
