@@ -27,6 +27,8 @@ npm install
 npm run dev
 ```
 
+Video showing both [HERE](https://github.com/GeorgetteTafeNSW/MicroCourses/blob/main/FrontEndandBackEnd.mp4)
+
 ---
 ## 🗂️ Course Schema & Example
 
@@ -74,6 +76,9 @@ POST
     "name": "Network Troubleshooting and Diagnostics"
 }
 ```
+
+Video showing example use of these endpoints via postman [HERE](https://github.com/GeorgetteTafeNSW/MicroCourses/blob/main/PostmanEndpointTesting.mp4)
+
 ---
 ## 🛠️ Problems Encountered
 
