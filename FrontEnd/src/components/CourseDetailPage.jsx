@@ -92,7 +92,7 @@ function CourseDetailPage() {
         </Tabs>
 
         <Modal isOpen={enrolledOpen} onRequestClose={toggleEnrolledOpen}>
-          <p>Woo!</p>
+          <p>Enrolment button pressed :)</p>
         </Modal>
       </div>
     );
