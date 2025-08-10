@@ -91,4 +91,4 @@ Since this project is more a proof of concept than a fully fledged production re
 ---
 
 ## Future Improvements
-See here: LINKHERE for information on how the application can utilise caching and load balancing among other things to support high availability and scalability
+See here: [HERE](https://github.com/GeorgetteTafeNSW/MicroCourses/blob/main/Report.pdf) for information on how the application can utilise caching and load balancing among other things to support high availability and scalability
