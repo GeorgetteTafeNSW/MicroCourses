@@ -24,6 +24,7 @@ import { config } from "dotenv";
 //initialise express and pass in cors package
 const app = express();
 app.use(cors());
+app.use(express.json());
 
 //allow for images to be served from images folder - images in this application are served by
 //passing a url pointing at this folder to the client
@@ -133,15 +134,43 @@ app.get("/courses/:courseId", (req, res) => {
  @returns JSON object with the created course
  */
 app.post("/course", async (req, res) => {
+  //map passed in moduleIds to ObjectIds
+  const modulesAsObjectIds = req.body.modules?.map(id => new Types.ObjectId(`${id}`)) || [];
+
   //create new model + add generated id field
   const newCourse = new Course({
     ...req.body,
+    modules: modulesAsObjectIds,
     _id: new Types.ObjectId(),
   });
 
   try {
     await newCourse.save();
     res.status(201).send(newCourse);
+  } catch (error) {
+    console.log(error);
+    res.status(400).send(error);
+  }
+});
+
+/**
+ @route   POST /module
+ @desc    Creates a new module which can then be assigned to a course
+ @access  Public
+ @body    content (json) with name field
+ @returns JSON object with the created module
+ */
+app.post("/module", async (req, res) => {
+  //create new model + add generated id field
+  console.log(req.body);
+  const newModule = new Module({
+    ...req.body,
+    _id: new Types.ObjectId(),
+  });
+
+  try {
+    await newModule.save();
+    res.status(201).send(newModule);
   } catch (error) {
     console.log(error);
     res.status(400).send(error);

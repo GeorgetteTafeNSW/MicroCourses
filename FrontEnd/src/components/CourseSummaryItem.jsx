@@ -8,6 +8,11 @@ Parameters: course object, button handler
 
 Facilitates passing the course id back to a predefined function (in this case used
 to navigate to the specific course page)
+
+Uses a flexbox to display the course title and image in a row.
+
+Uses a flexbox to display the header, description, duration and More? buttons for
+the course
 */
 
 //import css file

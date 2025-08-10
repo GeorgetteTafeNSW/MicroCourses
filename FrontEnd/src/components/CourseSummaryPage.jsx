@@ -3,10 +3,10 @@ CourseSummaryPage.jsx
 
 The react component displays all courses available as part of the MicroCourses offering.
 
-Parameters: course object, button handler
-
 Facilitates passing the course id back to a predefined function (in this case used
 to navigate to the specific course page)
+
+Uses a flexbox to display each course in a column
 */
 
 //import useNavigate to allow for browsing to specific course pages

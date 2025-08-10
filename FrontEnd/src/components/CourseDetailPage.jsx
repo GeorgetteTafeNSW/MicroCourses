@@ -4,7 +4,11 @@ CourseDetailPage.jsx
 The react component displays the in depth details of a specific course by querying
 the server for course information and then updating the UI using a react hook.
 
+Uses a flexbox to display the header items (image, title, enrol button) evenly across
+the available space.
 
+Uses the react-tabs package to display course description and modules in separate tabs
+for readability
 */
 
 //import react-tabs library for displaying course information in a user friendly manner
