@@ -6,7 +6,9 @@
 ## Setup Instructions:
 
 Download or clone code from this repository
+
 Install latest NodeJs (verified on v22.18.0)
+
 Install latest x64 microsoft redistributables
 
 ### Back End
