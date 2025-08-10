@@ -76,7 +76,8 @@ POST
 ---
 ## 🛠️ Problems Encountered
 
-Uploading Images
+Uploading Images:
+
 Initial versions of this application involved storing images in the database as byte arrays but this had several downsides.
 1. Storage overhead: storing these images, even though they are quite small bloated the disk size required by the database.
 2. Conversion nightmares: In order to store + recall images, multiple stages of conversion needed to be done, which increases the opportuinity for bugs.
