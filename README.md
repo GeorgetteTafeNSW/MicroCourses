@@ -4,11 +4,15 @@
 
 ---
 ## Setup Instructions:
+
+Download or clone code from this repository
+Install latest NodeJs (verified on v22.18.0)
+Install latest x64 microsoft redistributables
+
 ### Back End
 
-1. Download files in BackEnd folder: [HERE](https://github.com/GeorgetteTafeNSW/MicroCourses/tree/main/BackEnd)
-2. Open powershell window in the downloaded folder
-3. Run the following commands:
+1. Open powershell window in the BackEnd folder
+2. Run the following commands:
 ```
 npm init
 npm install express
@@ -17,10 +21,8 @@ node --env-file=config.env server.js
 
 ### Front End
 
-1. Download files in FrontEnd folder: [HERE](https://github.com/GeorgetteTafeNSW/MicroCourses/tree/main/FrontEnd)
-2. Open powershell window in the downloaded folder
-3. Run the following commands:
-
+1. Open powershell window in the FrontEnd folder
+2. Run the following commands:
 ```
 npm install
 npm run dev
