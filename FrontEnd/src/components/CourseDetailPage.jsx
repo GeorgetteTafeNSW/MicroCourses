@@ -77,7 +77,11 @@ function CourseDetailPage() {
             <Tab>Modules</Tab>
           </TabList>
 
-          <TabPanel>{course.longDescription}</TabPanel>
+          <TabPanel>
+            <div className="description">
+              {course.longDescription}
+            </div>
+          </TabPanel>
           <TabPanel>
             <ul>
               {course.modules.map((module, index) => (
