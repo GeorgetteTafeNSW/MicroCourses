@@ -14,7 +14,6 @@ Install latest x64 microsoft redistributables
 1. Open powershell window in the BackEnd folder
 2. Run the following commands:
 ```
-npm init
 npm install express
 node --env-file=config.env server.js
 ```
