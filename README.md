@@ -15,6 +15,7 @@
   "imageName": "",
   "modules": []
 }
+```
 
 Example (where imageName is a file that exists in the images folder and modules is a list of Ids which exist in the Modules collection):
 POST
@@ -32,14 +33,15 @@ POST
         "6897deff2dfaabaa38f1f11f"
     ]
 }
-
+```
 ---
 
 ## 🗂️ Module Schema & Example
-```json```
+```json
 {
     "name": ""
 }
+```
 
 Example:
 POST
@@ -47,3 +49,4 @@ POST
 {
     "name": "Network Troubleshooting and Diagnostics"
 }
+```
