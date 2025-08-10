@@ -24,6 +24,8 @@ import { config } from "dotenv";
 //initialise express and pass in cors package
 const app = express();
 app.use(cors());
+
+//configure ability to parse json models sent to endpoints
 app.use(express.json());
 
 //allow for images to be served from images folder - images in this application are served by
